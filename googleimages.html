@@ -24,12 +24,11 @@
                 <input type="hidden" id="hidden" name="oq" value="xxx">
             </form>
         </main>
-
+        <script>
+            function setValue() {
+                document.getElementById("hidden").value = document.getElementById("field").value
+                }
+            window.onload = setValue;
+        </script>
     </body>
-    <script>
-        function setValue() {
-            document.getElementById("hidden").value = document.getElementById("field").value
-        }
-        window.onload = setValue;
-    </script>
 </html>
